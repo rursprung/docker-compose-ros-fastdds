@@ -1,0 +1,12 @@
+services:
+  fastdds:
+    build:
+      dockerfile: fastdds.Dockerfile
+    ports:
+      - 11811
+  talker:
+    build:
+      dockerfile: talker.Dockerfile
+  listener:
+    build:
+      dockerfile: listener.Dockerfile
